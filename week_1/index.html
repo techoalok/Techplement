@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Display Quote Section -->
+    <section id="display-quote">
+        <h1>Random Quote</h1>
+        <p id="quote-text">Loading...</p>
+        <p id="quote-author">- Unknown</p>
+        <button id="next-button">Next Quote</button>
+    </section>
+
+    <!-- Add New Quote Section -->
+    <section id="add-quote">
+        <h2>Add a New Quote</h2>
+        <form id="quote-form">
+            <label for="q_text">Quote:</label>
+            <textarea id="q_text" name="q_text" required></textarea>
+            
+            <label for="q_author">Author:</label>
+            <input type="text" id="q_author" name="q_author" required>
+            
+            <button type="submit">Add Quote</button>
+        </form>
+        <p id="response-message"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+body {
+  background: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Display Quote Section */
+#display-quote {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+#display-quote h1 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#quote-text {
+  font-size: 1.4em;
+  color: #34495e;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+#quote-author {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#next-button {
+  background: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+#next-button:hover {
+  background: #2980b9;
+}
+
+/* Add New Quote Section */
+#add-quote {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+#add-quote h2 {
+  font-size: 1.6em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#quote-form label {
+  font-weight: bold;
+  color: #34495e;
+  text-align: left;
+  font-size: 1em;
+}
+
+#quote-form textarea,
+#quote-form input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#quote-form textarea:focus,
+#quote-form input[type="text"]:focus {
+  border-color: #3498db;
+}
+
+#quote-form button {
+  background: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#quote-form button:hover {
+  background: #1e8449;
+}
+
+#response-message {
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Message Colors */
+#response-message.success {
+  color: #27ae60;
+}
+
+#response-message.error {
+  color: #e74c3c;
+}
