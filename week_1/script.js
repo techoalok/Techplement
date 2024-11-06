@@ -1,8 +1,7 @@
-// script.js
 
 // URL of the GET and POST API endpoints
-const apiUrlGet = "http://localhost/quote_api/get_quote.php"; // Adjust as per your setup
-const apiUrlPost = "http://localhost/quote_api/add_quote.php"; // Adjust as per your setup
+const apiUrlGet = "http://localhost/quote_api/get_quote.php"; 
+const apiUrlPost = "http://localhost/quote_api/add_quote.php"; 
 
 // Display Quote Section
 document.getElementById("next-button").addEventListener("click", fetchRandomQuote);
